@@ -1,8 +1,6 @@
 const Service = require('../service/userService')
 const MovieService = require('../service/movieService')
 const AuthService = require('../service/authService')
-const bcrypt = require('bcrypt')
-const jwt = require('jsonwebtoken')
 const moment = require('moment')
 
 const service = Service()
@@ -37,7 +35,6 @@ function deliverMovie(req, resp){
     }
 }
 
-
 function rentmovie(req, resp){
     try {
 
@@ -68,8 +65,6 @@ function rentmovie(req, resp){
     }
 }
 
-
-
 function get(req, resp){
     try {
         service.get({}, function(result){
@@ -94,7 +89,6 @@ function find(req, resp){
     }
 }
 
-
 function save(req, resp){
     try {
         user = req.body
@@ -105,7 +99,6 @@ function save(req, resp){
         resp.status(404).send(error)
     }
 }
-
 
 function remove(req, resp) {
     try {
@@ -118,7 +111,6 @@ function remove(req, resp) {
     }
 }
 
-
 function update(req, resp) {
     try {
         user = req.body
@@ -129,7 +121,6 @@ function update(req, resp) {
         resp.status(404).send(error)
     }
 }
-
 
 function findById(req, resp){
     try {
