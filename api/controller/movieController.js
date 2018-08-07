@@ -23,7 +23,7 @@ function findById(req, resp){
 function findBy(req, resp){
     try {
         movieSearch = {}
-        
+
         if (req.body.name.length > 0)
             movieSearch.name = {$regex: req.body.name}
 
@@ -44,7 +44,7 @@ function findBy(req, resp){
 function get(req, resp){
     try {
         service.get({}, function(result){
-            resp.status(200).send(result)    
+            resp.status(200).send(result)
         })
     } catch(error) {
         resp.status(404).send(error)

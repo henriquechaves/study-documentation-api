@@ -76,7 +76,7 @@ function get(req, resp){
             var listUsers = result.filter(function(user){
                 return user.movies = []
             })
-            resp.status(200).send(listUsers)    
+            resp.status(200).send(listUsers)
         })
     } catch(error) {
         resp.status(404).send(error)
@@ -127,7 +127,7 @@ function update(req, resp) {
         })
     } catch(error){
         resp.status(404).send(error)
-    }    
+    }
 }
 
 

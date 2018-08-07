@@ -213,7 +213,7 @@
                         "description": "",
                         "schema":{ "$ref": "#/definitions/UpdateMovie" }
                     }
-                ], 
+                ],
                 "responses": {
                     "200": {
                         "description": "ok",
@@ -241,7 +241,7 @@
                         "description": "",
                         "schema":{ "$ref": "#/definitions/DeliverMovie" }
                     }
-                ], 
+                ],
                 "responses": {
                     "200": {
                         "description": "ok",
@@ -445,7 +445,7 @@
                 }
             }
         }
-    }, 
+    },
     "definitions": {
         "Users": {
             "type": "array",
@@ -487,7 +487,7 @@
             }
         },
         "RemoveUser": {
-            "properties": { 
+            "properties": {
                 "id": { "type": "string" }
             }
         },
@@ -505,7 +505,7 @@
             "$ref": "#/definitions/Movie"
         },
         "RemoveMovie": {
-            "properties": { 
+            "properties": {
                 "id": { "type": "string" }
             }
         },

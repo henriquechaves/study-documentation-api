@@ -19,12 +19,12 @@ function verifyToken(token, callback) {
 
 
 function generateToken(user){
-    return jwt.sign( 
-        { 
-            email: user.email, 
+    return jwt.sign(
+        {
+            email: user.email,
             _id: user._id,
-            type: user.type  
-        }, 
+            type: user.type
+        },
         tokenKey,
         {expiresIn: 2440}
     )

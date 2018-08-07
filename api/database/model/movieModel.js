@@ -28,7 +28,7 @@ function MovieModel(options){
                 callback(result)
             })
         },
-        
+
         update: function(model, callback) {
             db.update(MovieModel, model, function(result){
                 callback(result)

@@ -4,11 +4,11 @@ const urlConnection = config.get('database.connection_uri')
 const Mongoose = require('mongoose')
 const mongoose = Mongoose.connection
 
-const db = { 
-    save, 
-    get, 
-    remove, 
-    update, 
+const db = {
+    save,
+    get,
+    remove,
+    update,
     findById,
     findSearch
 }
