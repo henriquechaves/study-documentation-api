@@ -1,9 +1,9 @@
 app:
   port: 3002
 database:
-  url: queima_diaria
-  dbuser: juliancampos
-  dbpassword: queimadiaria
-  connection_uri: 'mongodb://juliancampos:queimadiaria@ds231740.mlab.com:31740/queima_diaria'
+  url: study_documentation_api
+  dbuser: henriquechaves
+  dbpassword: henrique@123
+  connection_uri: 'mongodb://henriquechaves:henriquechaves@ds231740.mlab.com:31740/study_documentation_api'
 token:
-  key: QueimaDiaria
+  key: StudyDocumentationApi
